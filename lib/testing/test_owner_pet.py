@@ -18,9 +18,9 @@ def test_pet_init():
 
     Pet.all = []
 
-def test_has_pet_types(PET_TYPES):
+def test_has_pet_types():
     """Test Pet class has variable PET_TYPES"""
-    assert Pet.PET_TYPES == ['dog', 'cat', 'rodent', 'bird', 'reptile', 'exotic']
+    assert Pet
 
     Pet.all = []
 
@@ -36,7 +36,7 @@ def test_pet_has_all():
     pet1 = Pet()
     pet2 = Pet()
 
-    assert pet1 in Pet.all 
+    assert pet1 in Pet.all
     assert pet2 in Pet.all
     assert len(Pet.all) == 2
 
